@@ -16,8 +16,8 @@ const tailwindcss = require('tailwindcss')
  |
  */
 
-mix.js('src/assets/js/app.js', 'public/build/js')
-  .postCss('src/assets/css/app.css', 'public/build/css/app.css')
+mix.js('src/assets/js/app.js', 'build/js')
+  .postCss('src/assets/css/app.css', 'build/css')
   .options({
     postCss: [
       cssImport(),
@@ -39,4 +39,6 @@ mix.js('src/assets/js/app.js', 'public/build/js')
         '@': path.resolve('src/assets/js'),
       },
     },
-  });
+  })
+  .version()
+  .sourceMaps()

@@ -1,0 +1,13 @@
+{
+    "name": "mauricecalhoun/prototyping",
+    "authors": [
+        {
+            "name": "Maurice Calhoun",
+            "email": "mauricecalhoun@gmail.com"
+        }
+    ],
+    "autoload": {
+        "files": ["mix.php"]
+    },
+    "require": {}
+}
